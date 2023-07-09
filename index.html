@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>N-Queen Backtracking</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1 align="center">N-Queen Backtracking</h1>
+  <div style="text-align: center;">
+    <label for="nvalue">Choose n:</label>
+    <div class="select-container">
+      <select name="nvalue" id="nvalue">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <button id="startAnim">Start Solving</button>
+  </div>
+  <div class="container">
+    <svg id="lineContainer" class="line-container"></svg>
+    <label for="speedSlider">Animation Speed (in ms):</label>
+    <div class="slider-container range-wrap">
+      <input type="range" class="range" id="speedSlider" min="1" max="10000" step="1" value="2000">
+      <output class="bubble"></output>
+    </div>
+    <div class="board"></div>
+  </div>
+  <h1 align="center" style="margin-top: 60px;">Solutions</h1>
+  <div class="solution-container"></div>
+  <div style="text-align: center; margin-top: 20px;">
+    <button id="downloadButton" hidden>Download Solutions</button>
+    <h2 id="noSol" hidden>No Solutions!!</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
